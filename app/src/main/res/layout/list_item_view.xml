@@ -49,6 +49,6 @@
             android:textSize="@dimen/category_text_size"
             tools:text="@string/book_author" />
     </LinearLayout>
-   
+
 
 </RelativeLayout>

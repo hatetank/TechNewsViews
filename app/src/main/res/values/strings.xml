@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">News Views</string>
+    <string name="app_name">Tech News Views</string>
     <string name="update_news_button">Update News</string>
     <string name="directions_textview">This feed will update automatically every 20 seconds</string>
     <string name="search_button_text">Search!</string>
