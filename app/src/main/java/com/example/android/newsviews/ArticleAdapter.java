@@ -13,11 +13,11 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class ArticleAdapter extends ArrayAdapter<Article> {
+class ArticleAdapter extends ArrayAdapter<Article> {
 
-    int mBackGroundColor;
+    private int mBackGroundColor;
 
-    public ArticleAdapter(Context context, ArrayList<Article> articles, int backGroundColor) {
+    ArticleAdapter(Context context, ArrayList<Article> articles, int backGroundColor) {
         super(context, 0, articles);
         mBackGroundColor = backGroundColor;
     }

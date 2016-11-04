@@ -1,7 +1,7 @@
 package com.example.android.newsviews;
 
 public class Article {
-    public static final int NO_IMAGE_PROVIDED = -1;
+    private static final int NO_IMAGE_PROVIDED = -1;
     private  String mArticleUrl;
     private String mArticleTitle;
     private String mArticleAuthor;

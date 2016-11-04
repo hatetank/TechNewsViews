@@ -26,7 +26,7 @@ import java.util.ArrayList;
 import java.util.Locale;
 
 /**
- * Code for parsing inspired by:
+ * Code for JSON parsing inspired by:
  *
  * http://www.tutorialspoint.com/android/android_json_parser.htm
  *
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
         {
             lookUpArticles(findViewById(R.id.list));
-            // 20 second delay.  reduce to avoid API shutdown :)
+            // 20 second delay.  Required to avoid lockout from API
             MainActivity.this.mHandler.postDelayed(mRunnable, 20000);
         }
 
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
         NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
         if (networkInfo != null && networkInfo.isConnected()) {
             // fetch data
-            new DownloadWebpageTask().execute("http://content.guardianapis.com/technology?api-key=test");
+            new DownloadWebpageTask().execute("http://content.guardianapis.com/search?order-by=newest&q=politics&api-key=test");
 
         } else {
             // display error
